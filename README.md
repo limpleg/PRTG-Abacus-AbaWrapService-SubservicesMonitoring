@@ -18,10 +18,12 @@ C:\Program Files (x86)\PRTG Network Monitor\Custom Sensors\EXEXML
 3. In the **EXE/Script** dropdown, select the script.
 4. Set the following parameters:
 
-| Parameter   | Example                                | Description                                      |
-|-------------|----------------------------------------|--------------------------------------------------|
-| Minutes     | 10                                   | Timespan from now to back to search inside log files for the services     |
-| LogFolder    | `\\yourabacusserver\c$\programfiles\abacus\log\abawrapservice` | UNC Path to the Logfolder                           |
+| Parameter   | Example                                | Description                                      | Default
+|-------------|----------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| Minutes     | 10                                   | Timespan from now to back to search inside log files for the services     | 10 Min is Default setting in the Script |
+| LogFolder    | `\\yourabacusserver\c$\programfiles\abacus\log\abawrapservice` | UNC Path to the Logfolder                           | \\localhost\c$\ABAC\log\abawrapservice |
+
+Note: if you adjust the Parameters inside the script, they don't have to be defined on PRTG
 
 ### Example usage in PRTG:
 > -Minutes 1 -LogFolder "\\yourabacusserver\c$\programfiles\abacus\log\abawrapservice"
