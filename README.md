@@ -17,6 +17,7 @@ C:\Program Files (x86)\PRTG Network Monitor\Custom Sensors\EXEXML
 2. Name the sensor, e.g., *Abacus Wrap Service Monitoring*.
 3. In the **EXE/Script** dropdown, select the script.
 4. Set the following parameters:
+
 | Parameter   | Example                                | Description                                      |
 |-------------|----------------------------------------|--------------------------------------------------|
 | Minutes     | 10                                   | Timespan from now to back to search inside log files for the services     |
